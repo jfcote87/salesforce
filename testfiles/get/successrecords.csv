@@ -1,0 +1,5 @@
+sf__Created,sf__Id,Name,Type,RecordTypeId,Vendor_ID__c
+false,,Name1,Business,aaaaaa,VN00001
+false,,Name2,Business,bbbbbb,VN00002
+false,,Name3,Business,aaaaaa,VN00003
+true,SFID04,Name4,Business,aaaaaa,VN00004

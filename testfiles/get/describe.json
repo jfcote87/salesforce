@@ -1,0 +1,1765 @@
+{
+    "actionOverrides": [
+        {
+            "isAvailableInTouch": true,
+            "name": "Delete",
+            "pageID": "0664S000000ott1QAA",
+            "url": "https://aninstance--npsp.visualforce.com/apex/CON_DeleteContactOverride?id=ENTITY_ID\u0026_CONFIRMATIONTOKEN=VmpFPSxNakF5TVMweE1pMHdNVlF3TXpvMU16bzFNaTQyTWpSYSxRSE9CSDhxZ2RRYkRlcEk4YU5Tb01ILFl6aG1OV05p\u0026common.udd.actions.ActionsUtilORIG_URI=%2Fapex%2Fnpsp__CON_DeleteContactOverride"
+        },
+        {
+            "formFactor": "LARGE",
+            "name": "View",
+            "pageID": "0M04S000000DTk4SAG"
+        }
+    ],
+    "childRelationships": [
+        {
+            "cascadeDelete": true,
+            "childSObject": "AIInsightValue",
+            "field": "SobjectLookupValueId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "AIRecordInsight",
+            "field": "TargetId"
+        },
+        {
+            "childSObject": "AcceptedEventRelation",
+            "field": "RelationId",
+            "relationshipName": "AcceptedEventRelations"
+        },
+        {
+            "childSObject": "Account",
+            "field": "npe01__One2OneContact__c",
+            "relationshipName": "npe01__Organizations__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "AccountContactRole",
+            "field": "ContactId",
+            "relationshipName": "AccountContactRoles"
+        },
+        {
+            "childSObject": "AccountContactRoleChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ActivityHistory",
+            "field": "WhoId",
+            "relationshipName": "ActivityHistories"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Affiliation__c",
+            "field": "Contact__c",
+            "relationshipName": "Affiliations__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Asset",
+            "field": "ContactId",
+            "relationshipName": "Assets"
+        },
+        {
+            "childSObject": "AssetChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "AttachedContentDocument",
+            "field": "LinkedEntityId",
+            "relationshipName": "AttachedContentDocuments"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "AttachedContentNote",
+            "field": "LinkedEntityId",
+            "relationshipName": "AttachedContentNotes"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Attachment",
+            "field": "ParentId",
+            "relationshipName": "Attachments"
+        },
+        {
+            "childSObject": "AuthorizationFormConsent",
+            "field": "ConsentGiverId",
+            "relationshipName": "AuthorizationFormConsents",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "AuthorizationFormConsentChangeEvent",
+            "field": "ConsentGiverId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "BookSales__c",
+            "field": "Contact__c",
+            "relationshipName": "BookSales__r"
+        },
+        {
+            "childSObject": "Campaign",
+            "field": "Fellow__c",
+            "relationshipName": "Campaigns__r"
+        },
+        {
+            "childSObject": "Campaign",
+            "field": "lfadmin__c",
+            "relationshipName": "Programs__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CampaignMember",
+            "field": "ContactId",
+            "relationshipName": "CampaignMembers"
+        },
+        {
+            "childSObject": "CampaignMember",
+            "field": "LeadOrContactId"
+        },
+        {
+            "childSObject": "CampaignMemberChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "childSObject": "Case",
+            "field": "ContactId",
+            "relationshipName": "Cases",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "CaseChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CaseContactRole",
+            "field": "ContactId",
+            "relationshipName": "CaseContactRoles"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CaseTeamMember",
+            "field": "MemberId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CaseTeamTemplateMember",
+            "field": "MemberId"
+        },
+        {
+            "childSObject": "Category__c",
+            "field": "Contact__c",
+            "relationshipName": "Categories__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CollaborationGroupRecord",
+            "field": "RecordId",
+            "relationshipName": "RecordAssociatedGroups"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "CombinedAttachment",
+            "field": "ParentId",
+            "relationshipName": "CombinedAttachments"
+        },
+        {
+            "childSObject": "CommSubscriptionConsent",
+            "field": "ConsentGiverId",
+            "relationshipName": "CommSubscriptionConsents",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "CommSubscriptionConsentChangeEvent",
+            "field": "ConsentGiverId"
+        },
+        {
+            "childSObject": "Contact",
+            "field": "ReportsToId"
+        },
+        {
+            "childSObject": "ContactChangeEvent",
+            "field": "ReportsToId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContactFeed",
+            "field": "ParentId",
+            "relationshipName": "Feeds"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContactHistory",
+            "field": "ContactId",
+            "relationshipName": "Histories"
+        },
+        {
+            "childSObject": "ContactRequest",
+            "field": "WhoId",
+            "relationshipName": "ContactRequests"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContactShare",
+            "field": "ContactId",
+            "relationshipName": "Shares"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContentDistribution",
+            "field": "RelatedRecordId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContentDocumentLink",
+            "field": "LinkedEntityId",
+            "relationshipName": "ContentDocumentLinks"
+        },
+        {
+            "childSObject": "ContentVersion",
+            "field": "FirstPublishLocationId"
+        },
+        {
+            "childSObject": "Contract",
+            "field": "CustomerSignedId",
+            "relationshipName": "ContractsSigned",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "ContractChangeEvent",
+            "field": "CustomerSignedId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ContractContactRole",
+            "field": "ContactId",
+            "relationshipName": "ContractContactRoles"
+        },
+        {
+            "childSObject": "DeclinedEventRelation",
+            "field": "RelationId",
+            "relationshipName": "DeclinedEventRelations"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "DuplicateRecordItem",
+            "field": "RecordId",
+            "relationshipName": "DuplicateRecordItems"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "EmailMessageRelation",
+            "field": "RelationId",
+            "relationshipName": "EmailMessageRelations"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "EmailStatus",
+            "field": "WhoId",
+            "relationshipName": "EmailStatuses"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Email_Address__c",
+            "field": "Contact__c",
+            "relationshipName": "Email_Addresses__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "EntitySubscription",
+            "field": "ParentId",
+            "relationshipName": "FeedSubscriptionsForEntity"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Evaluation__c",
+            "field": "Contact__c",
+            "relationshipName": "Evaluations__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Event",
+            "field": "WhoId",
+            "relationshipName": "Events"
+        },
+        {
+            "childSObject": "EventChangeEvent",
+            "field": "WhoId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "EventRelation",
+            "field": "RelationId",
+            "relationshipName": "EventRelations"
+        },
+        {
+            "childSObject": "EventRelationChangeEvent",
+            "field": "RelationId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Expertise__c",
+            "field": "Contact__c",
+            "relationshipName": "Expertise__r"
+        },
+        {
+            "childSObject": "FeedComment",
+            "field": "ParentId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "FeedItem",
+            "field": "ParentId"
+        },
+        {
+            "childSObject": "FlowExecutionErrorEvent",
+            "field": "ContextRecordId"
+        },
+        {
+            "childSObject": "FlowRecordRelation",
+            "field": "RelatedRecordId"
+        },
+        {
+            "childSObject": "LF_Web_Contributor__c",
+            "field": "Contact__c",
+            "relationshipName": "LF_Web_Contributors__r"
+        },
+        {
+            "childSObject": "Lead",
+            "field": "ConvertedContactId"
+        },
+        {
+            "childSObject": "LeadChangeEvent",
+            "field": "ConvertedContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ListEmailIndividualRecipient",
+            "field": "RecipientId",
+            "relationshipName": "ListEmailIndividualRecipients"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "MatchingInformation",
+            "field": "SFDCIdId"
+        },
+        {
+            "childSObject": "MyList_Conferee__c",
+            "field": "Contact__c",
+            "relationshipName": "Suggested_Conferees__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Note",
+            "field": "ParentId",
+            "relationshipName": "Notes"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "NoteAndAttachment",
+            "field": "ParentId",
+            "relationshipName": "NotesAndAttachments"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "OpenActivity",
+            "field": "WhoId",
+            "relationshipName": "OpenActivities"
+        },
+        {
+            "childSObject": "Opportunity",
+            "field": "ContactId",
+            "relationshipName": "Opportunities"
+        },
+        {
+            "childSObject": "Opportunity",
+            "field": "npsp__Honoree_Contact__c",
+            "relationshipName": "npsp__Honoree_Opportunities__r"
+        },
+        {
+            "childSObject": "Opportunity",
+            "field": "npsp__Notification_Recipient_Contact__c",
+            "relationshipName": "npsp__Notification_Opportunities__r"
+        },
+        {
+            "childSObject": "Opportunity",
+            "field": "npsp__Primary_Contact__c",
+            "relationshipName": "npsp__Opportunities__r"
+        },
+        {
+            "childSObject": "OpportunityChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "OpportunityContactRole",
+            "field": "ContactId",
+            "relationshipName": "OpportunityContactRoles"
+        },
+        {
+            "childSObject": "OpportunityContactRoleChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "childSObject": "Order",
+            "field": "CustomerAuthorizedById",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "OrderChangeEvent",
+            "field": "CustomerAuthorizedById"
+        },
+        {
+            "childSObject": "Other_Event_Participation__c",
+            "field": "Contact__c",
+            "relationshipName": "Other_Event_Participations__r"
+        },
+        {
+            "childSObject": "OutgoingEmail",
+            "field": "WhoId"
+        },
+        {
+            "childSObject": "OutgoingEmailRelation",
+            "field": "RelationId",
+            "relationshipName": "OutgoingEmailRelations"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Payment__c",
+            "field": "Contact__c",
+            "relationshipName": "Payments__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "ProcessInstance",
+            "field": "TargetObjectId",
+            "relationshipName": "ProcessInstances"
+        },
+        {
+            "childSObject": "ProcessInstanceHistory",
+            "field": "TargetObjectId",
+            "relationshipName": "ProcessSteps"
+        },
+        {
+            "childSObject": "Proposal_Author__c",
+            "field": "Contact__c",
+            "relationshipName": "Authors__r"
+        },
+        {
+            "childSObject": "Publication_Role__c",
+            "field": "Contact__c",
+            "relationshipName": "Publication_Roles__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "RecordAction",
+            "field": "RecordId",
+            "relationshipName": "RecordActions"
+        },
+        {
+            "childSObject": "RecordActionHistory",
+            "field": "ParentRecordId",
+            "relationshipName": "RecordActionHistories"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "SocialPersona",
+            "field": "ParentId",
+            "relationshipName": "Personas"
+        },
+        {
+            "childSObject": "SocialPost",
+            "field": "WhoId",
+            "relationshipName": "Posts"
+        },
+        {
+            "childSObject": "SocialPostChangeEvent",
+            "field": "WhoId"
+        },
+        {
+            "childSObject": "TMap_Data__c",
+            "field": "Contact__c",
+            "relationshipName": "TMap_Data__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "Task",
+            "field": "WhoId",
+            "relationshipName": "Tasks"
+        },
+        {
+            "childSObject": "TaskChangeEvent",
+            "field": "WhoId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "TopicAssignment",
+            "field": "EntityId",
+            "relationshipName": "TopicAssignments"
+        },
+        {
+            "childSObject": "UndecidedEventRelation",
+            "field": "RelationId",
+            "relationshipName": "UndecidedEventRelations"
+        },
+        {
+            "childSObject": "User",
+            "field": "ContactId",
+            "relationshipName": "Users",
+            "restrictedDelete": true
+        },
+        {
+            "childSObject": "UserChangeEvent",
+            "field": "ContactId"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "UserEmailPreferredPerson",
+            "field": "PersonRecordId",
+            "relationshipName": "PersonRecord"
+        },
+        {
+            "childSObject": "npe03__Recurring_Donation__c",
+            "field": "npe03__Contact__c",
+            "relationshipName": "npe03__R00N80000002bOmREAU__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "npe4__Relationship__c",
+            "field": "npe4__Contact__c",
+            "relationshipName": "npe4__Relationships__r"
+        },
+        {
+            "childSObject": "npe4__Relationship__c",
+            "field": "npe4__RelatedContact__c",
+            "relationshipName": "npe4__Relationships1__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "npe5__Affiliation__c",
+            "field": "npe5__Contact__c",
+            "relationshipName": "npe5__Affiliations__r"
+        },
+        {
+            "childSObject": "npsp__DataImport__c",
+            "field": "npsp__Contact1Imported__c",
+            "relationshipName": "npsp__Data_Imports__r"
+        },
+        {
+            "childSObject": "npsp__DataImport__c",
+            "field": "npsp__Contact2Imported__c",
+            "relationshipName": "npsp__Data_Imports1__r"
+        },
+        {
+            "childSObject": "npsp__Engagement_Plan__c",
+            "field": "npsp__Contact__c",
+            "relationshipName": "npsp__Action_Plans__r"
+        },
+        {
+            "cascadeDelete": true,
+            "childSObject": "npsp__Partial_Soft_Credit__c",
+            "field": "npsp__Contact__c",
+            "relationshipName": "npsp__Partial_Soft_Credits__r"
+        }
+    ],
+    "compactLayoutable": true,
+    "createable": true,
+    "deletable": true,
+    "feedEnabled": true,
+    "fields": [
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "groupable": true,
+            "idLookup": true,
+            "label": "Contact ID",
+            "length": 18,
+            "name": "Id",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "id"
+        },
+        {
+            "defaultedOnCreate": true,
+            "defaultValue": false,
+            "filterable": true,
+            "groupable": true,
+            "label": "Deleted",
+            "name": "IsDeleted",
+            "soapType": "xsd:boolean",
+            "sortable": true,
+            "type": "boolean"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "filterable": true,
+            "groupable": true,
+            "label": "Master Record ID",
+            "length": 18,
+            "name": "MasterRecordId",
+            "nillable": true,
+            "referenceTo": [
+                "Contact"
+            ],
+            "relationshipName": "MasterRecord",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Account ID",
+            "length": 18,
+            "name": "AccountId",
+            "nillable": true,
+            "permissionable": true,
+            "referenceTo": [
+                "Account"
+            ],
+            "relationshipName": "Account",
+            "searchPrefilterable": true,
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "compoundFieldName": "Name",
+            "createable": true,
+            "extraTypeInfo": "personname",
+            "filterable": true,
+            "groupable": true,
+            "label": "Last Name",
+            "length": 80,
+            "name": "LastName",
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "Name",
+            "createable": true,
+            "extraTypeInfo": "personname",
+            "filterable": true,
+            "groupable": true,
+            "label": "First Name",
+            "length": 40,
+            "name": "FirstName",
+            "nillable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "Name",
+            "createable": true,
+            "extraTypeInfo": "personname",
+            "filterable": true,
+            "groupable": true,
+            "label": "Salutation",
+            "length": 40,
+            "name": "Salutation",
+            "nillable": true,
+            "picklistValues": [
+                {
+                    "active": true,
+                    "label": "Mr.",
+                    "value": "Mr."
+                },
+                {
+                    "active": true,
+                    "label": "Ms.",
+                    "value": "Ms."
+                },
+                {
+                    "active": true,
+                    "label": "Mrs.",
+                    "value": "Mrs."
+                },
+                {
+                    "active": true,
+                    "label": "Dr.",
+                    "value": "Dr."
+                },
+                {
+                    "active": true,
+                    "label": "Prof.",
+                    "value": "Prof."
+                },
+                {
+                    "active": true,
+                    "label": "Mx.",
+                    "value": "Mx."
+                }
+            ],
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "picklist",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 363,
+            "extraTypeInfo": "personname",
+            "filterable": true,
+            "groupable": true,
+            "label": "Full Name",
+            "length": 121,
+            "nameField": true,
+            "name": "Name",
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Record Type ID",
+            "length": 18,
+            "name": "RecordTypeId",
+            "nillable": true,
+            "referenceTo": [
+                "RecordType"
+            ],
+            "relationshipName": "RecordType",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 765,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "extraTypeInfo": "plaintextarea",
+            "filterable": true,
+            "groupable": true,
+            "label": "Other Street",
+            "length": 255,
+            "name": "OtherStreet",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "textarea",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other City",
+            "length": 40,
+            "name": "OtherCity",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other State/Province",
+            "length": 80,
+            "name": "OtherState",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 60,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other Zip/Postal Code",
+            "length": 20,
+            "name": "OtherPostalCode",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other Country",
+            "length": 80,
+            "name": "OtherCountry",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "label": "Other Latitude",
+            "name": "OtherLatitude",
+            "nillable": true,
+            "permissionable": true,
+            "precision": 18,
+            "scale": 15,
+            "soapType": "xsd:double",
+            "sortable": true,
+            "type": "double",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "label": "Other Longitude",
+            "name": "OtherLongitude",
+            "nillable": true,
+            "permissionable": true,
+            "precision": 18,
+            "scale": 15,
+            "soapType": "xsd:double",
+            "sortable": true,
+            "type": "double",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "OtherAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other Geocode Accuracy",
+            "length": 40,
+            "name": "OtherGeocodeAccuracy",
+            "nillable": true,
+            "permissionable": true,
+            "picklistValues": [
+                {
+                    "active": true,
+                    "label": "Address",
+                    "value": "Address"
+                },
+                {
+                    "active": true,
+                    "label": "NearAddress",
+                    "value": "NearAddress"
+                },
+                {
+                    "active": true,
+                    "label": "Block",
+                    "value": "Block"
+                },
+                {
+                    "active": true,
+                    "label": "Street",
+                    "value": "Street"
+                },
+                {
+                    "active": true,
+                    "label": "ExtendedZip",
+                    "value": "ExtendedZip"
+                },
+                {
+                    "active": true,
+                    "label": "Zip",
+                    "value": "Zip"
+                },
+                {
+                    "active": true,
+                    "label": "Neighborhood",
+                    "value": "Neighborhood"
+                },
+                {
+                    "active": true,
+                    "label": "City",
+                    "value": "City"
+                },
+                {
+                    "active": true,
+                    "label": "County",
+                    "value": "County"
+                },
+                {
+                    "active": true,
+                    "label": "State",
+                    "value": "State"
+                },
+                {
+                    "active": true,
+                    "label": "Unknown",
+                    "value": "Unknown"
+                }
+            ],
+            "restrictedPicklist": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "picklist",
+            "updateable": true
+        },
+        {
+            "filterable": true,
+            "label": "Other Address",
+            "name": "OtherAddress",
+            "nillable": true,
+            "permissionable": true,
+            "queryByDistance": true,
+            "soapType": "urn:address",
+            "type": "address"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 765,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "extraTypeInfo": "plaintextarea",
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing Street",
+            "length": 255,
+            "name": "MailingStreet",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "textarea",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing City",
+            "length": 40,
+            "name": "MailingCity",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing State/Province",
+            "length": 80,
+            "name": "MailingState",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 60,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing Zip/Postal Code",
+            "length": 20,
+            "name": "MailingPostalCode",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing Country",
+            "length": 80,
+            "name": "MailingCountry",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "label": "Mailing Latitude",
+            "name": "MailingLatitude",
+            "nillable": true,
+            "permissionable": true,
+            "precision": 18,
+            "scale": 15,
+            "soapType": "xsd:double",
+            "sortable": true,
+            "type": "double",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "label": "Mailing Longitude",
+            "name": "MailingLongitude",
+            "nillable": true,
+            "permissionable": true,
+            "precision": 18,
+            "scale": 15,
+            "soapType": "xsd:double",
+            "sortable": true,
+            "type": "double",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "compoundFieldName": "MailingAddress",
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mailing Geocode Accuracy",
+            "length": 40,
+            "name": "MailingGeocodeAccuracy",
+            "nillable": true,
+            "permissionable": true,
+            "picklistValues": [
+                {
+                    "active": true,
+                    "label": "Address",
+                    "value": "Address"
+                },
+                {
+                    "active": true,
+                    "label": "NearAddress",
+                    "value": "NearAddress"
+                },
+                {
+                    "active": true,
+                    "label": "Block",
+                    "value": "Block"
+                },
+                {
+                    "active": true,
+                    "label": "Street",
+                    "value": "Street"
+                },
+                {
+                    "active": true,
+                    "label": "ExtendedZip",
+                    "value": "ExtendedZip"
+                },
+                {
+                    "active": true,
+                    "label": "Zip",
+                    "value": "Zip"
+                },
+                {
+                    "active": true,
+                    "label": "Neighborhood",
+                    "value": "Neighborhood"
+                },
+                {
+                    "active": true,
+                    "label": "City",
+                    "value": "City"
+                },
+                {
+                    "active": true,
+                    "label": "County",
+                    "value": "County"
+                },
+                {
+                    "active": true,
+                    "label": "State",
+                    "value": "State"
+                },
+                {
+                    "active": true,
+                    "label": "Unknown",
+                    "value": "Unknown"
+                }
+            ],
+            "restrictedPicklist": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "picklist",
+            "updateable": true
+        },
+        {
+            "filterable": true,
+            "label": "Mailing Address",
+            "name": "MailingAddress",
+            "nillable": true,
+            "permissionable": true,
+            "queryByDistance": true,
+            "soapType": "urn:address",
+            "type": "address"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Business Phone",
+            "length": 40,
+            "name": "Phone",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Business Fax",
+            "length": 40,
+            "name": "Fax",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Mobile Phone",
+            "length": 40,
+            "name": "MobilePhone",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Home Phone",
+            "length": 40,
+            "name": "HomePhone",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Other Phone",
+            "length": 40,
+            "name": "OtherPhone",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Asst. Phone",
+            "length": 40,
+            "name": "AssistantPhone",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "phone",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Reports To ID",
+            "length": 18,
+            "name": "ReportsToId",
+            "nillable": true,
+            "permissionable": true,
+            "referenceTo": [
+                "Contact"
+            ],
+            "relationshipName": "ReportsTo",
+            "searchPrefilterable": true,
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "idLookup": true,
+            "label": "Email",
+            "length": 80,
+            "name": "Email",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "email",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 384,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Title",
+            "length": 128,
+            "name": "Title",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 240,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Department",
+            "length": 80,
+            "name": "Department",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 120,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Assistant's Name",
+            "length": 40,
+            "name": "AssistantName",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 765,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Lead Source",
+            "length": 255,
+            "name": "LeadSource",
+            "nillable": true,
+            "permissionable": true,
+            "picklistValues": [
+                {
+                    "active": true,
+                    "label": "Web",
+                    "value": "Web"
+                },
+                {
+                    "active": true,
+                    "label": "Phone Inquiry",
+                    "value": "Phone Inquiry"
+                },
+                {
+                    "active": true,
+                    "label": "Partner Referral",
+                    "value": "Partner Referral"
+                },
+                {
+                    "active": true,
+                    "label": "Purchased List",
+                    "value": "Purchased List"
+                },
+                {
+                    "active": true,
+                    "label": "Other",
+                    "value": "Other"
+                }
+            ],
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "picklist",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Birthdate",
+            "name": "Birthdate",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:date",
+            "sortable": true,
+            "type": "date",
+            "updateable": true
+        },
+        {
+            "byteLength": 96000,
+            "createable": true,
+            "extraTypeInfo": "plaintextarea",
+            "label": "Contact Description",
+            "length": 32000,
+            "name": "Description",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "type": "textarea",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "createable": true,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Owner ID",
+            "length": 18,
+            "name": "OwnerId",
+            "referenceTo": [
+                "User"
+            ],
+            "relationshipName": "Owner",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference",
+            "updateable": true
+        },
+        {
+            "createable": true,
+            "defaultedOnCreate": true,
+            "defaultValue": false,
+            "filterable": true,
+            "groupable": true,
+            "label": "Email Opt Out",
+            "name": "HasOptedOutOfEmail",
+            "permissionable": true,
+            "soapType": "xsd:boolean",
+            "sortable": true,
+            "type": "boolean",
+            "updateable": true
+        },
+        {
+            "createable": true,
+            "defaultedOnCreate": true,
+            "defaultValue": false,
+            "filterable": true,
+            "groupable": true,
+            "label": "Fax Opt Out",
+            "name": "HasOptedOutOfFax",
+            "permissionable": true,
+            "soapType": "xsd:boolean",
+            "sortable": true,
+            "type": "boolean",
+            "updateable": true
+        },
+        {
+            "createable": true,
+            "defaultedOnCreate": true,
+            "defaultValue": false,
+            "filterable": true,
+            "groupable": true,
+            "label": "Do Not Call",
+            "name": "DoNotCall",
+            "permissionable": true,
+            "soapType": "xsd:boolean",
+            "sortable": true,
+            "type": "boolean",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "label": "Created Date",
+            "name": "CreatedDate",
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Created By ID",
+            "length": 18,
+            "name": "CreatedById",
+            "referenceTo": [
+                "User"
+            ],
+            "relationshipName": "CreatedBy",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference"
+        },
+        {
+            "aggregatable": true,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "label": "Last Modified Date",
+            "name": "LastModifiedDate",
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Last Modified By ID",
+            "length": 18,
+            "name": "LastModifiedById",
+            "referenceTo": [
+                "User"
+            ],
+            "relationshipName": "LastModifiedBy",
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference"
+        },
+        {
+            "aggregatable": true,
+            "defaultedOnCreate": true,
+            "filterable": true,
+            "label": "System Modstamp",
+            "name": "SystemModstamp",
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Last Activity",
+            "name": "LastActivityDate",
+            "nillable": true,
+            "soapType": "xsd:date",
+            "sortable": true,
+            "type": "date"
+        },
+        {
+            "aggregatable": true,
+            "filterable": true,
+            "label": "Last Stay-in-Touch Request Date",
+            "name": "LastCURequestDate",
+            "nillable": true,
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "filterable": true,
+            "label": "Last Stay-in-Touch Save Date",
+            "name": "LastCUUpdateDate",
+            "nillable": true,
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "filterable": true,
+            "label": "Last Viewed Date",
+            "name": "LastViewedDate",
+            "nillable": true,
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "filterable": true,
+            "label": "Last Referenced Date",
+            "name": "LastReferencedDate",
+            "nillable": true,
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 765,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Email Bounced Reason",
+            "length": 255,
+            "name": "EmailBouncedReason",
+            "nillable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "createable": true,
+            "filterable": true,
+            "label": "Email Bounced Date",
+            "name": "EmailBouncedDate",
+            "nillable": true,
+            "soapType": "xsd:dateTime",
+            "sortable": true,
+            "type": "datetime",
+            "updateable": true
+        },
+        {
+            "defaultedOnCreate": true,
+            "defaultValue": false,
+            "filterable": true,
+            "groupable": true,
+            "label": "Is Email Bounced",
+            "name": "IsEmailBounced",
+            "soapType": "xsd:boolean",
+            "sortable": true,
+            "type": "boolean"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 765,
+            "extraTypeInfo": "imageurl",
+            "filterable": true,
+            "groupable": true,
+            "label": "Photo URL",
+            "length": 255,
+            "name": "PhotoUrl",
+            "nillable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "url"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 60,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Data.com Key",
+            "length": 20,
+            "name": "Jigsaw",
+            "nillable": true,
+            "permissionable": true,
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string",
+            "updateable": true
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 60,
+            "filterable": true,
+            "groupable": true,
+            "label": "Jigsaw Contact ID",
+            "length": 20,
+            "name": "JigsawContactId",
+            "nillable": true,
+            "relationshipName": "JigsawContact",
+            "soapType": "xsd:string",
+            "sortable": true,
+            "type": "string"
+        },
+        {
+            "aggregatable": true,
+            "byteLength": 18,
+            "createable": true,
+            "filterable": true,
+            "groupable": true,
+            "label": "Individual ID",
+            "length": 18,
+            "name": "IndividualId",
+            "nillable": true,
+            "referenceTo": [
+                "Individual"
+            ],
+            "relationshipName": "Individual",
+            "searchPrefilterable": true,
+            "soapType": "tns:ID",
+            "sortable": true,
+            "type": "reference",
+            "updateable": true
+        }
+    ],
+    "keyPrefix": "003",
+    "labelPlural": "Contacts",
+    "label": "Contact",
+    "layoutable": true,
+    "mergeable": true,
+    "mruEnabled": true,
+    "name": "Contact",
+    "queryable": true,
+    "recordTypeInfos": [
+        {
+            "active": true,
+            "available": true,
+            "defaultRecordTypeMapping": true,
+            "developerName": "Conferee",
+            "name": "Conferee",
+            "recordTypeId": "0124S0000004UzMQAU",
+            "urls": {
+                "layout": "/services/data/v53.0/sobjects/Contact/describe/layouts/0124S0000004UzMQAU"
+            }
+        },
+        {
+            "active": true,
+            "available": true,
+            "developerName": "Employee",
+            "name": "Employee",
+            "recordTypeId": "0124S0000004UzNQAU",
+            "urls": {
+                "layout": "/services/data/v53.0/sobjects/Contact/describe/layouts/0124S0000004UzNQAU"
+            }
+        },
+        {
+            "active": true,
+            "available": true,
+            "developerName": "Master",
+            "master": true,
+            "name": "Master",
+            "recordTypeId": "012000000000000AAA",
+            "urls": {
+                "layout": "/services/data/v53.0/sobjects/Contact/describe/layouts/012000000000000AAA"
+            }
+        }
+    ],
+    "replicateable": true,
+    "retrieveable": true,
+    "searchable": true,
+    "searchLayoutable": true,
+    "sobjectDescribeOption": "FULL",
+    "supportedScopes": [
+        {
+            "label": "All contacts",
+            "name": "everything"
+        },
+        {
+            "label": "My contacts",
+            "name": "mine"
+        },
+        {
+            "label": "My team's contacts",
+            "name": "team"
+        }
+    ],
+    "triggerable": true,
+    "undeletable": true,
+    "updateable": true,
+    "urls": {
+        "approvalLayouts": "/services/data/v53.0/sobjects/Contact/describe/approvalLayouts",
+        "compactLayouts": "/services/data/v53.0/sobjects/Contact/describe/compactLayouts",
+        "describe": "/services/data/v53.0/sobjects/Contact/describe",
+        "layouts": "/services/data/v53.0/sobjects/Contact/describe/layouts",
+        "listviews": "/services/data/v53.0/sobjects/Contact/listviews",
+        "quickActions": "/services/data/v53.0/sobjects/Contact/quickActions",
+        "rowTemplate": "/services/data/v53.0/sobjects/Contact/{ID}",
+        "sobject": "/services/data/v53.0/sobjects/Contact",
+        "uiDetailTemplate": "https://aninstance.my.salesforce.com/{ID}",
+        "uiEditTemplate": "https://aninstance.my.salesforce.com/{ID}/e",
+        "uiNewRecord": "https://aninstance.my.salesforce.com/003/e"
+    }
+}

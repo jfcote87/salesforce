@@ -1,0 +1,3 @@
+sf__Error,sf__Id,Name,Type,RecordTypeId,Vendor_ID__c
+Duplicate Vendor_ID__c,,Name5,Business,aaaaaa,VN00005
+Duplicate Vendor_ID__c,,Name6,Business,aaaaaa,VN00006
